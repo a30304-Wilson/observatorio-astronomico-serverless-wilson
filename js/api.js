@@ -2,7 +2,7 @@
 const API_URL = 'https://pjg63up1nh.execute-api.us-east-1.amazonaws.com/dev/contact';
  
 document.addEventListener('DOMContentLoaded', () => {
-  const form = document.querySelector('.ebook-download-form');
+  const form = document.querySelector('.observatorio-download-form');
   if (!form) return;
  
   form.addEventListener('submit', async (event) => {
@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
     event.preventDefault();
  
     // Leemos los valores del DOM.
-    const name = document.getElementById('ebook-form-name').value.trim();
-    const email = document.getElementById('ebook-email').value.trim();
+    const name = document.getElementById('observatorio-form-name').value.trim();
+    const email = document.getElementById('observatorio-email').value.trim();
     const payload = { name, email };
     console.log('Payload:', payload);
  
